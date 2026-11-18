@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1024px; height: 1024px; font-family: "DejaVu Sans", Arial, sans-serif; background: #f4f1ea; }
+  .page { width: 1024px; height: 1024px; display: flex; flex-direction: column; }
+  /* ---------- header ---------- */
+  header { background: #0d1b2a; color: #fff; padding: 24px 44px 18px; }
+  .kicker { font-size: 20px; letter-spacing: 5px; color: #e63946; font-weight: 700; }
+  h1 { font-size: 58px; line-height: 1.05; font-weight: 900; letter-spacing: -1px; margin-top: 5px; }
+  .sub { font-size: 22px; color: #b8c4d0; margin-top: 6px; letter-spacing: 1px; }
+  .rule { height: 6px; background: #e63946; }
+  /* ---------- grid ---------- */
+  .grid { flex: 1; display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: minmax(0,1fr) minmax(0,1fr) minmax(0,1fr); gap: 16px; padding: 18px 24px 12px; }
+  .story { background: #fff; border-radius: 10px; padding: 15px 20px 12px; border-left: 10px solid; display: flex; flex-direction: column; overflow: hidden; }
+  .top { display: flex; justify-content: space-between; align-items: center; }
+  .num { font-size: 28px; font-weight: 900; color: #0d1b2a; }
+  .tag { font-size: 16px; font-weight: 800; letter-spacing: 2px; color: #fff; padding: 4px 11px; border-radius: 20px; }
+  h2 { font-size: 29px; line-height: 1.12; font-weight: 900; color: #111; margin: 8px 0 6px; }
+  p { font-size: 20px; line-height: 1.32; color: #333; }
+  .c1 { border-color: #e63946; } .c1 .tag { background: #e63946; }
+  .c2 { border-color: #0e7c7b; } .c2 .tag { background: #0e7c7b; }
+  .c3 { border-color: #e67e00; } .c3 .tag { background: #e67e00; }
+  .c4 { border-color: #5b4bc4; } .c4 .tag { background: #5b4bc4; }
+  .c5 { border-color: #0b5fa5; } .c5 .tag { background: #0b5fa5; }
+  .c6 { border-color: #2e7d32; } .c6 .tag { background: #2e7d32; }
+  /* ---------- footer ---------- */
+  footer { padding: 0 44px 14px; font-size: 17px; color: #666; display: flex; justify-content: space-between; }
+</style>
+</head>
+<body>
+<div class="page">
+  <header>
+    <div class="kicker">TUESDAY &bull; THE WORLD IN ONE IMAGE</div>
+    <h1>17 NOVEMBER 2026</h1>
+    <div class="sub">Six stories that defined the day</div>
+  </header>
+  <div class="rule"></div>
+  <div class="grid">
+    <div class="story c1">
+      <div class="top"><span class="num">01</span><span class="tag">SUMMIT</span></div>
+      <h2>Trump, Xi &amp; Putin meet in Shenzhen</h2>
+      <p>A historic three-way summit at the APEC meeting in China, as Trump flies in from Manila and Xi pushes open trade.</p>
+    </div>
+    <div class="story c2">
+      <div class="top"><span class="num">02</span><span class="tag">UKRAINE</span></div>
+      <h2>Ukraine hits the Crimean Bridge</h2>
+      <p>Drones and missiles critically damage the Kerch bridge to Crimea. Zelenskyy calls it an &ldquo;unprecedented&rdquo; operation.</p>
+    </div>
+    <div class="story c3">
+      <div class="top"><span class="num">03</span><span class="tag">GULF</span></div>
+      <h2>US strikes Iran missile site</h2>
+      <p>America hits a missile site on Qeshm Island after Iranian drone attacks on US bases in Bahrain and Kuwait.</p>
+    </div>
+    <div class="story c4">
+      <div class="top"><span class="num">04</span><span class="tag">TECH</span></div>
+      <h2>Nvidia chief quits in spy-affair scandal</h2>
+      <p>Jensen Huang resigns over an affair with a woman US intelligence says was a Chinese-recruited spy. AI stocks slide.</p>
+    </div>
+    <div class="story c5">
+      <div class="top"><span class="num">05</span><span class="tag">USA</span></div>
+      <h2>Democrats flip Alaska Senate seat</h2>
+      <p>Mary Peltola beats Republican Dan Sullivan two weeks after the midterms. Democrats now hold 56 Senate seats.</p>
+    </div>
+    <div class="story c6">
+      <div class="top"><span class="num">06</span><span class="tag">JAPAN</span></div>
+      <h2>Japan scrambles jets on Russia</h2>
+      <p>Fighter jets launch after Russian military aircraft enter Japanese airspace. Tokyo lodges a strong protest.</p>
+    </div>
+  </div>
+  <footer>
+    <span>Sources: AP &bull; BBC &bull; NPR &bull; Reuters &bull; Foreign Exchanges</span>
+    <span>17 NOV 2026</span>
+  </footer>
+</div>
+</body>
+</html>
